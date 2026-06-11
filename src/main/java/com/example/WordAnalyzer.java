@@ -68,6 +68,9 @@ public class WordAnalyzer {
      * @return the frequency of the word, or null if the word is not found
      */
     public Integer getWordFrequency(String word) {
+        if (!wordFrequency.containsKey(word)) {
+            return Integer.valueOf(0);
+        }
         return wordFrequency.get(word);
     }
 
