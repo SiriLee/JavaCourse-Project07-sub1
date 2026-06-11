@@ -16,3 +16,25 @@ private void loadFile(String filePath) throws IOException {
 }
 ```
 
+## Task2
+源代码：[WordAnalyzer](src/main/java/com/example/WordAnalyzer.java)
+
+代码片段：
+```java
+public int getDistinctWordCount() {
+    return wordFrequency.size();
+}
+```
+
+## Task3
+源代码：[WordAnalyzer](src/main/java/com/example/WordAnalyzer.java)
+
+代码片段：
+```java
+private void calculateWordFrequency() {
+    for (String word : words) {
+        wordFrequency.put(word, wordFrequency.getOrDefault(word, 0) + 1);
+    }
+}
+```
+
