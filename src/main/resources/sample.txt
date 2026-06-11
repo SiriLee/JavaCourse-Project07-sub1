@@ -1,0 +1,5 @@
+Java is a high-level programming language. Java is designed to be platform independent.
+The Java virtual machine JVM allows Java programs to run on any platform.
+Java is an object oriented programming language.
+Programming in Java is fun and powerful. Java has a rich set of libraries.
+Object oriented programming helps organize code better and better.
