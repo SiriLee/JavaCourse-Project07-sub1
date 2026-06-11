@@ -62,4 +62,13 @@ public class WordAnalyzer {
         return wordFrequency.size();
     }
 
+    /**
+     * Returns the frequency of a given word.
+     * @param word the word to check
+     * @return the frequency of the word, or null if the word is not found
+     */
+    public Integer getWordFrequency(String word) {
+        return wordFrequency.get(word);
+    }
+
 }

@@ -36,5 +36,9 @@ private void calculateWordFrequency() {
         wordFrequency.put(word, wordFrequency.getOrDefault(word, 0) + 1);
     }
 }
+
+public Integer getWordFrequency(String word) {
+    return wordFrequency.get(word);
+}
 ```
 
