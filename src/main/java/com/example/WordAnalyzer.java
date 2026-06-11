@@ -2,6 +2,8 @@ package com.example;
 
 import java.util.List;
 import java.util.Map;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
@@ -22,6 +24,8 @@ public class WordAnalyzer {
      * @throws IOException
      */
     public WordAnalyzer(String filePath) throws IOException {
+        words = new ArrayList<>();
+        wordFrequency = new HashMap<>();
         loadFile(filePath);
         calculateWordFrequency();
     }
