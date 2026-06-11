@@ -1,5 +1,17 @@
 # 容器
 
+## 编译与运行
+```bash
+# 编译主程序
+mvn compile
+# 编译测试程序
+mvn test-compile
+# 运行测试
+mvn test
+# 运行主程序
+java -cp target/classes com.example.Main
+```
+
 ## Task1
 源代码：[WordAnalyzer](src/main/java/com/example/WordAnalyzer.java)
 
@@ -42,7 +54,26 @@ public Integer getWordFrequency(String word) {
 }
 ```
 
+测试代码：[SparseMatrixTest](src/test/java/com/example/SparseMatrixTest.java)
+
+运行测试：
+
+```bash
+# 编译测试代码
+mvn test-compile
+# 运行测试
+mvn test -Dtest="com.example.SparseMatrixTest"
+```
+
 ## Task4
 源代码：[SparseMatrix](src/main/java/com/example/SparseMatrix.java)
 
+测试代码：[WordAnalyzerTest](src/test/java/com/example/WordAnalyzerTest.java)
 
+运行测试：
+```bash
+# 编译测试代码
+mvn test-compile
+# 运行测试
+mvn test -Dtest="com.example.WordAnalyzerTest"
+```
